@@ -3,24 +3,29 @@
     <div class="title">
       {{ msg }}
     </div>
-    <welcome />
-    <div class="home-footer">
-      <div class="arrow">
-        <i class="fas fa-angle-double-down arrow-icon"></i>
+    <Welcome />
+    <div class="bottom-section">
+      <div class="welcome-text">
+        <p>I'm MexTermin, do you want to know me?</p>
+      </div>
+      <div class="home-footer">
+        <Arrow />
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import welcome from "./welcome.vue";
+import Welcome from "./welcome.vue";
+import Arrow from "./arrow.vue";
 export default {
   name: "Home",
   props: {
     msg: String
   },
   components: {
-    welcome
+    Welcome,
+    Arrow
   }
 };
 </script>
@@ -31,39 +36,36 @@ export default {
   color: white;
   font-size: 2em;
 }
-.arrow-icon {
-  color: line;
-  font-size: 3.5em;
-  background: -webkit-repeating-linear-gradient(
-    top,
-    rgb(58, 230, 253) 0px,
-    blue 60px
-  );
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.arrow-icon:hover {
-  cursor: pointer;
-  transform: scale(1.05);
-  background: -webkit-repeating-linear-gradient(
-    top,
-    rgb(5, 74, 153) 0px,
-    rgb(0, 0, 0) 60px
-  );
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
+
 .home-footer {
   width: 100%;
-  position: fixed;
-  bottom: 0vh;
   display: flex;
   justify-content: center;
 }
 
 .home-container {
   overflow: hidden;
+}
+
+.bottom-section {
+  width: 100%;
+  position: fixed;
+  bottom: 0vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.welcome-text {
+  text-align: center;
+  padding: 55px;
+  font-size: 2.5em;
+  background: -webkit-repeating-linear-gradient(
+    top,
+    rgb(4, 212, 240) 0px,
+    rgb(11, 74, 248) 60px
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 </style>
