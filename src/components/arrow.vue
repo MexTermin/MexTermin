@@ -40,20 +40,16 @@ export default {
   animation-name: arrow-animation;
   animation-duration: 2s;
   animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
+  animation-timing-function:linear;
 
 }
 
 @keyframes arrow-animation {
   0% {
     position: relative;
-  }
-  20% {
-    position: relative;
     bottom: 0px;
   }
   60% {
-    position: relative;
     bottom: 20px;
   }
   100% {

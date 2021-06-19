@@ -22,7 +22,7 @@ body {
   padding: 0px;
 }
 #app {
-  background: linear-gradient(to bottom, rgb(0, 20, 56), rgb(3, 9, 27));
+  background: linear-gradient(to bottom, rgb(1, 15, 43), rgb(0, 0, 0));
   overflow: hidden;
   height: 100vh;
   width: 100vw;
