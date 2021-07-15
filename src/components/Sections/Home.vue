@@ -76,7 +76,7 @@ export default {
 }
 
 .top-section {
-  height: 91%;
+  height: 92%;
   display: flex;
   justify-content: space-between;
 }
@@ -115,7 +115,7 @@ export default {
   line-height: 2.9em;
 }
 .blueColor {
-  background: -webkit-linear-gradient(rgb(5, 113, 255), rgb(4, 0, 255));
+  background: -webkit-linear-gradient(var(--blueColors));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
