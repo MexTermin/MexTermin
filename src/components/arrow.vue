@@ -12,8 +12,8 @@ export default {
 
 <style scoped>
 .arrow-icon {
-  margin-bottom: 20px;
-  font-size: 3.5em;
+  /* margin-bottom: 20px; */
+  font-size: 50px;
   background: -webkit-repeating-linear-gradient(
     top,
     rgb(58, 230, 253) 0px,
@@ -50,7 +50,7 @@ export default {
     bottom: 0px;
   }
   60% {
-    bottom: 20px;
+    bottom: -20px;
   }
   100% {
     position: relative;

@@ -1,30 +1,58 @@
 <template>
-  <Home msg="" />
+  <div class="gb-img">
+    <img :src="bg" alt="Ocean Background" >
+  </div>
+  <Home />
+  <HowIm/>
 </template>
 
 <script>
-import Home from "./components/Home.vue";
+  import HowIm from "./components/Sections/HowIm.vue";
+  import Home from "./components/Sections/Home.vue";
+  import bg from "./img/1920.png";
 
-export default {
-  name: "App",
-  components: {
-    Home
-  }
-};
+  export default {
+    name: "App",
+    components: {
+      Home,
+      HowIm
+    },
+    data: function() {
+      return{
+        bg:bg
+      }
+    }
+  };
 </script>
 
 <style>
-body {
-  overflow: hidden;
-}
-* {
-  margin: 0px;
-  padding: 0px;
-}
-#app {
-  background: linear-gradient(to bottom, rgb(1, 15, 43), rgb(0, 0, 0));
-  overflow: hidden;
-  height: 100vh;
-  width: 100vw;
-}
+  @import url("./Constantes.css");
+  body {
+    overflow: hidden;
+  }
+  * {
+    margin: 0px;
+    padding: 0px;
+  }
+  #app {
+
+
+    width: 100vw;
+  }
+
+  .gb-img{
+    position:absolute;
+    width:100vw;
+    height:100vh;
+    z-index:-100;
+  }
+  .gb-img img{
+    background-repeat:no-repeat;
+    background-position: center;
+    filter:blur(20px);
+    object-fit:cover;
+    width:100%;
+    height:100%;
+    transform: scale(1.1);
+  }
 </style>
