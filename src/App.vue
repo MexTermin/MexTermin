@@ -1,11 +1,12 @@
 <template>
 <div class="body">
-    <div class="gb-img">
-      <img :src="bg" alt="Ocean Background" >
-    </div>
-    <Navbar/>
-    <Home />
-    <HowIm/>
+  <Charging/>
+  <div class="gb-img">
+    <img :src="bg" alt="Ocean Background" >
+  </div>
+  <Navbar/>
+  <Home />
+  <HowIm/>
 
 </div>
 </template>
@@ -14,6 +15,7 @@
   import HowIm from "./components/Sections/HowIm.vue";
   import Home from "./components/Sections/Home.vue";
   import Navbar from "./components/Navbar.vue";
+  import Charging from "./components/Charging.vue";
   import bg from "./img/1920.png";
 
   export default {
@@ -21,7 +23,8 @@
     components: {
       Home,
       HowIm,
-      Navbar
+      Navbar,
+      Charging
     },
     data: function() {
       return{
@@ -61,4 +64,5 @@
     height:100%;
     transform: scale(1.1);
   }
+
 </style>

@@ -2,13 +2,13 @@
   <section class="home-container">
     <div class="top-section">
       <div class="text-container">
-        <p>
-          <span class="blueColor">&#60;</span>
+        <p class="colorize">
+          <span class="blueColor ">&#60;</span>
           Hello
-          <span class="blueColor">/&#62;</span>
+          <span class="blueColor ">/&#62;</span>
         </p>
-        <p>I' MexTermin</p>
-        <p>Sofware and website developer</p>
+        <h1 lass="colorize">I' MexTermin</h1>
+        <p lass="colorize">Sofware and website developer <span class="typed">&#160;</span></p>
       </div>
 
       <div class="logo-container">
@@ -42,6 +42,7 @@ export default {
     };
   }
 };
+
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -86,11 +87,11 @@ export default {
   font-family: "Roboto", "Times New Roman", Times;
 }
 
-.text-container p {
+.text-container p, h1 {
   display: inline-block;
   width: 100%;
   font-family: "Roboto", "Times New Roman", Times;
-  background: -webkit-linear-gradient(var(--textGradient));
+  background: linear-gradient(0deg,var(--textGradient));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -115,7 +116,7 @@ export default {
   line-height: 2.9em;
 }
 .blueColor {
-  background: -webkit-linear-gradient(var(--blueColors));
+  background: linear-gradient(0deg,var(--blueColors));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -133,5 +134,25 @@ export default {
   filter: opacity(70%);
   user-select: none;
   border-radius: 50px;
+}
+
+.colorize{
+  animation: colorize 3s ease ;
+}
+
+@keyframes colorize {
+  0% {
+    background-position: 0% 200%;
+
+    }
+  50%{
+    background-position: 200% 0%;
+
+  }
+  100% {
+  background-position: 0% 330%;
+
+  }
+
 }
 </style>
