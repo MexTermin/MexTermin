@@ -1,6 +1,6 @@
 <template>
 <div class="body">
-  <Charging/>
+  <Loading/>
   <div class="gb-img">
     <img :src="bg" alt="Ocean Background" >
   </div>
@@ -15,7 +15,7 @@
   import HowIm from "./components/Sections/HowIm.vue";
   import Home from "./components/Sections/Home.vue";
   import Navbar from "./components/Navbar.vue";
-  import Charging from "./components/Charging.vue";
+  import Loading from "./components/Loading.vue";
   import bg from "./img/1920.png";
 
   export default {
@@ -24,7 +24,7 @@
       Home,
       HowIm,
       Navbar,
-      Charging
+      Loading
     },
     data: function() {
       return{
@@ -38,19 +38,17 @@
   @import url("./Constantes.css");
   body {
     overflow: hidden;
+    font-family: 'Karla', sans-serif;
   }
   * {
     margin: 0px;
     padding: 0px;
   }
   #app {
-
-
     width: 100vw;
   }
-
   .gb-img{
-    position:absolute;
+    position:fixed;
     width:100vw;
     height:100vh;
     z-index:-100;

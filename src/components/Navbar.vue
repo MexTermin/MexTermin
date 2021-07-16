@@ -19,7 +19,7 @@ export default {
 
 <style>
 nav {
-  position: absolute;
+  position: fixed;
   top: 0px;
   width: 90vw;
   margin-left:5vw;
@@ -37,12 +37,13 @@ nav {
   flex-direction: row;
 }
 .menu-item {
-  background: -webkit-linear-gradient(var(--textGradient));
+  background: -webkit-linear-gradient(var(--mainDeg),var(--textGradient));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   padding: 0px 20px;
-  font-size: 22px;
+  font-size: 27px;
+  font-weight:bold;
 }
 .menu-item:hover{
     transform: scale(1.05);
@@ -51,11 +52,11 @@ nav {
 }
 
 .select{
-    text-shadow: 0 0 8px white;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.616);
 }
 
 .nav-logo {
-  background: -webkit-linear-gradient(var(--textGradient));
+  background: -webkit-linear-gradient(var(--mainDeg),var(--textGradient));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

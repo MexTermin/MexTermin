@@ -2,13 +2,17 @@
   <section class="home-container">
     <div class="top-section">
       <div class="text-container">
-        <p class="colorize">
+        <p>
           <span class="blueColor ">&#60;</span>
           Hello
           <span class="blueColor ">/&#62;</span>
         </p>
-        <h1 lass="colorize">I' MexTermin</h1>
-        <p lass="colorize">Sofware and website developer <span class="typed">&#160;</span></p>
+        <h1>I' MexTermin</h1>
+        <p>
+          Welcome to the increible mundo de gumball<span class="typed"
+            >&#160;</span
+          >
+        </p>
       </div>
 
       <div class="logo-container">
@@ -27,8 +31,8 @@
 </template>
 
 <script>
-import Arrow from "../arrow.vue";
 import logo from "../../img/logo.png";
+import Arrow from "../DownArrow.vue";
 
 export default {
   name: "Home",
@@ -42,7 +46,6 @@ export default {
     };
   }
 };
-
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -87,11 +90,12 @@ export default {
   font-family: "Roboto", "Times New Roman", Times;
 }
 
-.text-container p, h1 {
+.text-container p,
+h1 {
   display: inline-block;
   width: 100%;
   font-family: "Roboto", "Times New Roman", Times;
-  background: linear-gradient(0deg,var(--textGradient));
+  background: linear-gradient(var(--mainDeg), var(--textGradient));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -106,7 +110,8 @@ export default {
   box-shadow: 3px 5px 15px 2px var(--showPrimaryColor);
   height: fit-content;
   border: 15px double var(--showPrimaryColor);
-  border-radius: 50px;
+  border-top-left-radius: 20%;
+  border-bottom-right-radius: 20%;
   width: 40%;
   margin-left: 4em;
   display: flex;
@@ -116,7 +121,7 @@ export default {
   line-height: 2.9em;
 }
 .blueColor {
-  background: linear-gradient(0deg,var(--blueColors));
+  background: linear-gradient(var(--mainDeg), var(--blueColors));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -134,25 +139,5 @@ export default {
   filter: opacity(70%);
   user-select: none;
   border-radius: 50px;
-}
-
-.colorize{
-  animation: colorize 3s ease ;
-}
-
-@keyframes colorize {
-  0% {
-    background-position: 0% 200%;
-
-    }
-  50%{
-    background-position: 200% 0%;
-
-  }
-  100% {
-  background-position: 0% 330%;
-
-  }
-
 }
 </style>

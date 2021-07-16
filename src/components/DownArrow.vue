@@ -6,18 +6,18 @@
 
 <script>
 export default {
-  name: "Arrow"
+  name: "DownArrow"
 };
 </script>
 
 <style scoped>
+@import url("../Constantes.css");
+
 .arrow-icon {
-  /* margin-bottom: 20px; */
   font-size: 50px;
   background: -webkit-repeating-linear-gradient(
     top,
-    rgb(58, 230, 253) 0px,
-    blue 60px
+    var(--textGradient)
   );
   background-clip: text;
   -webkit-background-clip: text;

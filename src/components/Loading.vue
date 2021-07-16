@@ -27,7 +27,7 @@
 
 <script>
 export default {
-  name: "Charging"
+  name: "Loading"
 };
 </script>
 
@@ -38,7 +38,7 @@ export default {
   width: 100vw;
   height: 100vh;
   z-index: 99999;
-  background: var(--mainGradient);
+  background:linear-gradient(133deg,var(--mainGradient)) ;
   justify-content: center;
 }
 .loading {

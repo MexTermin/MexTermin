@@ -1,7 +1,7 @@
 import { createApp } from "vue";
 import App from "./App.vue";
-import "../src/Scripts/vhScrool.js";
-import { removeLoadingWhenloaded} from "./Scripts/loading";
+import "../src/scripts/vhScrool.js";
+import { removeLoadingWhenloaded} from "./scripts/loading";
 
 
 createApp(App).mount("#app");

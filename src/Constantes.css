@@ -1,9 +1,8 @@
 :root{
-    --mainGradient: linear-gradient(
-      138deg,
+    --mainDeg:260deg;
+    --mainGradient:
       rgba(2, 0, 36, 1) 50%,
-      rgb(1, 1, 59) 50%
-    );
+      rgb(1, 1, 59) 50%;
 
     --textGradient:rgb(255, 255, 255), rgb(0, 120, 136);
     --showPrimaryColor:rgb(119, 194, 255);
