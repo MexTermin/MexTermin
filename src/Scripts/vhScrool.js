@@ -1,6 +1,6 @@
 import getElementPosition from "./utilities.js";
 
-const delay = (n) => new Promise( r => setTimeout(r, n*1000));
+const delay = (n) => new Promise(r => setTimeout(r, n * 1000));
 
 function scroll(e) {
 
@@ -21,9 +21,32 @@ function scroll(e) {
     }
   }
 }
-window.addEventListener("wheel",async (e) =>{
+
+window.addEventListener("wheel", async (e) => {
   scroll(e);
   await delay(1);
 }, false);
 
+export function scrollDown() {
+  const sections = document.querySelectorAll("section");
+  for (let [i, sectionActual] of sections.entries()) {
+    if (getElementPosition(sectionActual, -300)) {
+      window.scrollTo({
+        top: sections[i + 1]?.offsetTop,
+        behavior: "smooth",
+      });
+    }
+  }
+}
+export function scrollUp() {
+  const sections = document.querySelectorAll("section");
+  for (let [i, sectionActual] of sections.entries()) {
+    if (getElementPosition(sectionActual, -300)) {
+      window.scrollTo({
+        top: sections[i - 1]?.offsetTop,
+        behavior: "smooth",
+      });
+    }
+  }
+}
 

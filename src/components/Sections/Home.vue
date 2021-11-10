@@ -2,12 +2,12 @@
   <section class="home-container">
     <div class="top-section">
       <div class="text-container">
-        <p>
+        <p class="welcome">
           <span class="blueColor ">&#60;</span>
-          Hello
+          Welcome
           <span class="blueColor ">/&#62;</span>
         </p>
-        <h1>I' MexTermin</h1>
+        <h1>I'm Yael Medina</h1>
         <p>
           Welcome to the increible mundo de gumball<span class="typed"
             >&#160;</span
@@ -38,17 +38,16 @@ export default {
   name: "Home",
   props: {},
   components: {
-    Arrow
+    Arrow,
   },
   data: function() {
     return {
-      logo: logo
+      logo: logo,
     };
-  }
+  },
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 /* IMPORTOS */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap");
@@ -107,9 +106,7 @@ h1 {
   margin-top: auto;
   margin-bottom: auto;
   padding: 30px;
-  box-shadow: 3px 5px 15px 2px var(--showPrimaryColor);
   height: fit-content;
-  border: 15px double var(--showPrimaryColor);
   border-top-left-radius: 20%;
   border-bottom-right-radius: 20%;
   width: 40%;
@@ -139,5 +136,57 @@ h1 {
   filter: opacity(70%);
   user-select: none;
   border-radius: 50px;
+}
+
+@media (max-width: 800px) {
+  .top-section {
+    flex-direction: column;
+  }
+  .text-container {
+    display: inline;
+    margin: 0px auto;
+    margin-top: auto;
+    width: 100%;
+    padding: 5px;
+  }
+  .text-container p,
+  h1 {
+    font-size: 30px;
+  }
+  .logo-container {
+    width: 100%;
+    margin-bottom: auto;
+    display: flex;
+    justify-content: center;
+  }
+  .logo-container img {
+    width: 40%;
+  }
+}
+
+@media (max-width: 600px) {
+  .home-footer {
+    transform: translateY(-50px);
+  }
+}
+@media (max-width: 500px) {
+  .text-container p,
+  h1 {
+    display: block;
+  }
+  .text-container {
+    text-align: center;
+  }
+}
+
+@media (max-width: 400px) {
+  .text-container p,
+  h1 {
+    font-size: 28px;
+    display: block;
+  }
+  .text-container {
+    text-align: center;
+  }
 }
 </style>

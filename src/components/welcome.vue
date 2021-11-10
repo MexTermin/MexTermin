@@ -1,6 +1,6 @@
 <template>
   <div class="img-container">
-    <img :src="welcomeImg" id="welcome"/>
+    <img :src="welcomeImg" id="welcome" />
     <div class=" shark-container">
       <img :src="sharkImg" id="shark" />
     </div>
@@ -13,19 +13,19 @@ import sharkImg from "../img/shark.png";
 export default {
   name: "welcome",
   props: {
-    Title: String
+    Title: String,
   },
   data: function() {
     return {
       welcomeImg: welcomeImg,
-      sharkImg: sharkImg
+      sharkImg: sharkImg,
     };
-  }
+  },
 };
 </script>
 
 <style scoped>
-#welcome{
+#welcome {
   width: 40%;
   height: 57%;
   user-select: none;
@@ -40,13 +40,12 @@ export default {
 
 #shark {
   width: 12vw;
-
 }
 .shark-rotation-conf {
   position: absolute !important;
   transform: rotate(220deg) !important;
-  left:-15% !important;
-  margin-top:200px !important;
+  left: -15% !important;
+  margin-top: 200px !important;
   width: 230px;
   height: 270px;
 }
@@ -58,56 +57,55 @@ export default {
   padding-top: 10px;
   user-select: none;
 }
-.rotation{
+.rotation {
   animation-name: rotation;
   animation-duration: 8s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
-@keyframes rotation{
-  100%{
-    transform:rotate(360deg);
+@keyframes rotation {
+  100% {
+    transform: rotate(360deg);
   }
 }
 
-@media  (max-width:1660px) {
+@media (max-width: 1660px) {
   .img-container {
-      margin-top: 9%;
+    margin-top: 9%;
   }
-  #welcome{
+  #welcome {
     width: 40%;
   }
-  .shark-container{
-      top: 14.6vw;
-      left: 24%;
+  .shark-container {
+    top: 14.6vw;
+    left: 24%;
   }
 }
-@media  (max-width:1360px) {
-  #shark{
-    width:18vw;
+@media (max-width: 1360px) {
+  #shark {
+    width: 18vw;
   }
-  #welcome{
+  #welcome {
     width: 60%;
   }
-  .shark-container{
-      top: 18vw;
-      left: 10%;
+  .shark-container {
+    top: 18vw;
+    left: 10%;
   }
 }
-@media  (max-width:1080px) {
+@media (max-width: 1080px) {
   .img-container {
-      margin-top: 19%;
+    margin-top: 19%;
   }
-  #shark{
-    width:20vw;
+  #shark {
+    width: 20vw;
   }
-  #welcome{
+  #welcome {
     width: 60%;
   }
-  .shark-container{
-      top: 27vw;
-      left: 8%;
+  .shark-container {
+    top: 27vw;
+    left: 8%;
   }
 }
-
 </style>
