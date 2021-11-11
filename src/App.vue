@@ -12,11 +12,11 @@
 </template>
 
 <script>
-import SecondSection from "./components/Sections/SecondSection.vue";
-import Home from "./components/Sections/Home.vue";
-import Navbar from "./components/Navbar.vue";
-import Loading from "./components/Loading.vue";
-import bg from "./img/1920.png";
+import SecondSection from "./Components/Sections/SecondSection.vue";
+import Home from "./Components/Sections/Home.vue";
+import Navbar from "./Components/Navbar.vue";
+import Loading from "./Components/Loading.vue";
+import bg from "./Img/1920.png";
 
 export default {
   name: "App",
