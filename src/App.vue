@@ -12,11 +12,11 @@
 </template>
 
 <script>
-const SecondSection = require("./components/Sections/SecondSection.vue");
-const Home = require("./components/Sections/Home.vue");
-const Navbar = require("./components/Navbar.vue");
-const Loading = require("./components/Loading.vue");
-const bg = require("./img/1920.png");
+import SecondSection from "./components/Sections/SecondSection.vue";
+import Home from "./components/Sections/Home.vue";
+import Navbar from "./components/Navbar.vue";
+import Loading from "./components/Loading.vue";
+import bg from "./img/1920.png";
 
 export default {
   name: "App",
