@@ -31,7 +31,7 @@
 </template>
 
 <script>
-import logo from "../../Img/logo.png";
+import logo from "../../img/logo.png";
 import Arrow from "../DownArrow.vue";
 
 export default {

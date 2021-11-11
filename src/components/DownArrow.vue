@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import { scrollDown } from "../Scripts/vhScrool.js";
+import { scrollDown } from "../scripts/vhScrool.js";
 export default {
   name: "DownArrow",
   methods: {
