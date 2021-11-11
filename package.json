@@ -5,7 +5,9 @@
   "scripts": {
     "serve": "vue-cli-service serve src/main.js",
     "build": "vue-cli-service build src/main.js",
-    "lint": "vue-cli-service lint src/main.js"
+    "lint": "vue-cli-service lint src/main.js",
+    "postinstall": "npm run build",
+    "start": "node server.js"
   },
   "dependencies": {
     "babel-loader": "^8.2.3",
