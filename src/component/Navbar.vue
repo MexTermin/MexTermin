@@ -4,7 +4,6 @@
     <div class="menu">
       <ul>
         <li class="menu-item select">.Home();</li>
-        <!-- <li class="menu-item">.About();</li> -->
       </ul>
     </div>
   </nav>

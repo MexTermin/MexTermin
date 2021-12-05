@@ -37,7 +37,7 @@ import Arrow from "../DownArrow.vue";
 export default {
   name: "Home",
   props: {},
-  components: {
+  component: {
     Arrow,
   },
   data: function() {
