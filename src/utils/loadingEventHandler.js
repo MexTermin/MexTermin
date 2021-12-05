@@ -1,23 +1,19 @@
 /**
  * Add a event that hidden the loadding sniper when the document content is loaded
  */
-function removeLoadingWhenloaded() {
-  window.addEventListener("DOMContentLoaded", () => {
-    document.querySelector(".charging").style.display = "none";
+ export function removeLoadingWhenloaded() {
+  window.addEventListener("load", () => {
+    const $charging = document.querySelector(".charging")
+    if($charging) $charging.style.display = "none";
   });
 }
 
 /**
  * Show the loading sniper
  */
-function showLoading() {
-  window.addEventListener("DOMContentLoaded", () => {
-    document.querySelector(".charging").style.display = "flex";
+ export function showLoading() {
+  window.addEventListener("load", () => {
+    const $charging = document.querySelector(".charging")
+    if($charging) $charging.style.display = "flex";
   });
-}
-
-export {
-  showLoading,
-  removeLoadingWhenloaded
-
 }

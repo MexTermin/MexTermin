@@ -1,15 +1,3 @@
-<template>
-  <div class="body">
-    <Loading />
-    <div class="gb-img">
-      <div class="gris-color"></div>
-      <img :src="bg" alt="Ocean Background" />
-    </div>
-    <Navbar />
-    <Home />
-    <SecondSection />
-  </div>
-</template>
 
 <script>
 import SecondSection from "./component/Sections/SecondSection.vue";
@@ -20,7 +8,7 @@ import bg from "./images/1920.png";
 
 export default {
   name: "App",
-  component: {
+  components: {
     Home,
     SecondSection,
     Navbar,
@@ -33,6 +21,19 @@ export default {
   },
 };
 </script>
+
+<template>
+  <div class="body">
+    <Loading />
+    <div class="gb-img">
+      <div class="gris-color"></div>
+      <img :src="bg" alt="Ocean Background" />
+    </div>
+    <Navbar />
+    <Home />
+    <SecondSection />
+  </div>
+</template>
 
 <style>
 @import url("./Constantes.css");
