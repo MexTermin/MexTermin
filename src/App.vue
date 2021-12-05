@@ -16,7 +16,7 @@ import SecondSection from "./component/Sections/SecondSection.vue";
 import Home from "./component/Sections/Home.vue";
 import Navbar from "./component/Navbar.vue";
 import Loading from "./component/Loading.vue";
-import bg from "./img/1920.png";
+import bg from "./images/1920.png";
 
 export default {
   name: "App",

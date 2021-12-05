@@ -24,11 +24,11 @@
 </template>
 
 <script>
-import github from "../../img/github.svg";
-import linkedin from "../../img/linkedin.svg";
-import twitter from "../../img/twitter.svg";
-import uparrow from "../../img/uparrow.svg";
-import { scrollUp } from "../../scripts/vhScrool.js";
+import github from "../../images/github.svg";
+import linkedin from "../../images/linkedin.svg";
+import twitter from "../../images/twitter.svg";
+import uparrow from "../../images/uparrow.svg";
+import { scrollUp } from "../../utils/vhScrool.js";
 export default {
   name: "SecondSection",
   methods: {
