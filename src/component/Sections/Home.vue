@@ -4,12 +4,12 @@
       <div class="text-container">
         <h1 class="welcome-text">
           <span class="blueColor"> &#60; </span>
-            Yael Medina (MexTermin)
+          Yael Medina (MexTermin)
           <span class="blueColor"> /&#62; </span>
         </h1>
         <p>
           I am a developer interested in web development, among the languages of
-          which I have knowledge are: JavaScript, TypeScript, Golang, C #. I
+          which I have knowledge are: JavaScript, TypeScript, Golang, C#. I
           have experiences in frameworks like Vue, React, Express, Flask.
         </p>
       </div>
@@ -116,7 +116,7 @@
     height: fit-content;
     border-top-left-radius: 20%;
     border-bottom-right-radius: 20%;
-    width: 52%;
+    width: 54%;
     margin-left: 4em;
     display: flex;
     flex-direction: column;
@@ -153,7 +153,7 @@
       display: inline;
       margin: 0px auto;
       margin-top: auto;
-      width: 100%;
+      width: 95%;
       padding: 5px;
     }
     .text-container p,
@@ -187,9 +187,12 @@
   }
 
   @media (max-width: 400px) {
-    .text-container p,
-    h1 {
-      font-size: 28px;
+    .text-container .welcome-text {
+      font-size: 25px;
+    }
+    .text-container p {
+      font-size: 20px;
+      line-height: 1.3em;
       display: block;
     }
     .text-container {

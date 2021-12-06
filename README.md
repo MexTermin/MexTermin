@@ -1,7 +1,21 @@
-# Vue 3 + Vite
+<h1>🐱‍👤Hi Warrior🐱‍👤</h1>
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+👨‍💻I'm Mextermin. 🏆Welcome to my Github, I'm Full-stack developer and I hope you enjoy your tour of my Github.
 
-## Recommended IDE Setup
+#### ✔️My knowledges📚
+- HTML
+- CSS
+- JavaScript
+- Golang
+- C#
+- NodeJS
+- Vue
 
-- [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar)
+#### 🐱‍👤I'm working on🌳
+- Developing projects in my work and some owns projects.
+
+#### 🌴 Fun facts 👀
+- I love listening to music🎶
+- I like dogs🐶🐶
+- My favorite hobby is playing video games.
+- I like the Tech World and Sciences
