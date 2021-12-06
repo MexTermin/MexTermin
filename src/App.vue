@@ -1,4 +1,3 @@
-
 <script>
 import SecondSection from "./component/Sections/SecondSection.vue";
 import Home from "./component/Sections/Home.vue";

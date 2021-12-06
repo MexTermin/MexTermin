@@ -9,8 +9,8 @@
         </h1>
         <p>
           I am a developer interested in web development, among the languages of
-          which I have knowledge are: JavaScript, TypeScript, Golang, C#. I
-          have experiences in frameworks like Vue, React, Express, Flask.
+          which I have knowledge are: JavaScript, TypeScript, Golang, C#. I have
+          experiences in frameworks like Vue, React, Express, Flask.
         </p>
       </div>
 
@@ -145,14 +145,20 @@
     border-radius: 50px;
   }
 
-  @media (max-width: 800px) {
+  @media (max-width: 1280px) {
+    .welcome-text {
+      font-size: 35px !important;
+    }
+  }
+
+  @media (max-width: 1040px) {
     .top-section {
       flex-direction: column;
     }
     .text-container {
       display: inline;
       margin: 0px auto;
-      margin-top: auto;
+      margin-top: 12%;
       width: 95%;
       padding: 5px;
     }
@@ -171,6 +177,12 @@
     }
   }
 
+    @media (max-width: 800px) {
+    .text-container {
+      margin-top: 18%;
+    }
+  }
+
   @media (max-width: 600px) {
     .home-footer {
       transform: translateY(-50px);
@@ -183,10 +195,11 @@
     }
     .text-container {
       text-align: center;
+      margin-top: 40%;
     }
   }
 
-  @media (max-width: 400px) {
+  @media (max-width: 500px) {
     .text-container .welcome-text {
       font-size: 25px;
     }
