@@ -2,6 +2,8 @@
 
 👨‍💻I'm Mextermin. 🏆Welcome to my Github, I'm Full-stack developer and I hope you enjoy your tour of my Github.
 
+[See my page](https://mextermin.netlify.app/)
+
 #### ✔️My knowledges📚
 - HTML
 - CSS
