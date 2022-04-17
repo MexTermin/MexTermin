@@ -8,10 +8,11 @@
 - HTML
 - CSS
 - JavaScript
+- TypeScript
 - Golang
 - C#
 - NodeJS
-- Vue
+- VueJS
 
 #### 🐱‍👤I'm working on🌳
 - Developing projects in my work and some owns projects.
